@@ -16,6 +16,6 @@ public class ExecuteMessage {
     /** 执行耗时（ms） */
     private Long time;
 
-    /** 内存占用（kb），暂不采集 */
+    /** 内存峰值（KB） */
     private Long memory;
 }
