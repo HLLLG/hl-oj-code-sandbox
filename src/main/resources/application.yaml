@@ -5,14 +5,14 @@ spring:
     parser:
       allow-unquoted-control-chars: true
 server:
-  port: 8080
+  port: 8090
 
 code-sandbox:
   # native | docker
-  type: native
+  type: docker
   docker:
     # 远端 VMware 中的 Docker daemon（需在 VM 内开启 2375 远程 API，无 TLS 仅限可信内网）
-    host: tcp://192.168.0.100:2375
-    image: openjdk:21-slim
+    host: tcp://10.122.6.63:2375
+    image: hub.cloud.ctripcorp.com/devops/almalinux-java21-maven3.8.8:latest
     memory-mb: 128
     cpu-count: 1

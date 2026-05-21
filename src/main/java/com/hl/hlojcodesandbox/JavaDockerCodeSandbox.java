@@ -42,7 +42,7 @@ public class JavaDockerCodeSandbox extends JavaCodeSandboxTemplate {
     @Value("${code-sandbox.docker.host:tcp://localhost:2375}")
     private String dockerHost;
 
-    @Value("${code-sandbox.docker.image:openjdk:21-slim}")
+    @Value("${code-sandbox.docker.image}")
     private String image;
 
     @Value("${code-sandbox.docker.memory-mb:128}")
