@@ -16,4 +16,7 @@ public class JudgeInfo implements Serializable {
 
     /** 消耗内存（kb） */
     private Long memory;
+
+    /** 判题详情：编译/运行错误文本，或答案错误时的用例对比 JSON */
+    private String detail;
 }
