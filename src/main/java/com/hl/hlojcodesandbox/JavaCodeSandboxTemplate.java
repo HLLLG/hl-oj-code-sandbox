@@ -165,6 +165,7 @@ public abstract class JavaCodeSandboxTemplate implements CodeSandbox {
     private CodeSandboxResult buildErrorResult(String judgeMessage, String detail) {
         JudgeInfo judgeInfo = new JudgeInfo();
         judgeInfo.setMessage(judgeMessage);
+        judgeInfo.setDetail(detail);
         judgeInfo.setTime(0L);
         judgeInfo.setMemory(0L);
 
